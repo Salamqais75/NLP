@@ -6,6 +6,8 @@ Part 1: Tokenization and Word2Vec Model Training
 
 -Word2Vec Model Training: A Word2Vec model is trained on the tokenized text to learn word embeddings, which represent words in a continuous vector space based on their context. The embeddings capture semantic relationships between words, enabling more sophisticated text analysis. The model parameters vector_size, window, and min_count were carefully selected and justified in the report.
 
+
+
 Part 2: Language Modeling with Trigrams
 
 -Generating the Most Likely Next Token: Given a sequence of two tokens, the model predicts the most likely third token based on trigram probabilities.
@@ -17,6 +19,8 @@ Part 2: Language Modeling with Trigrams
 -Filling in Missing Tokens: The model attempts to fill in missing tokens in sentences based on trigram probabilities, useful for tasks like autocompletion or text correction.
 
 -Model Comparison: This task involves comparing two trigram models (committee and plenary) to determine which model is more likely to generate a given sentence, aiding in categorizing text based on its origin.
+
+
 
 Part 3: Classification with Knesset Protocol Corpus
 
@@ -31,6 +35,7 @@ Part 3: Classification with Knesset Protocol Corpus
 -Experimenting with Chunk Sizes: Various chunk sizes are tested to determine their impact on classification performance, optimizing the model.
 
 -Evaluation and Reporting: The final step involves analyzing the model's performance, addressing specific questions about model evaluation methods, and documenting the findings in a detailed report.
+
 
 
 Part 4: Word Embeddings
@@ -48,6 +53,8 @@ We explore word similarity by identifying the closest words to a set of given wo
 -Classification Using Sentence Embeddings
 A KNN classifier is trained using sentence embeddings to classify Knesset text chunks as committee or plenary. The results are compared with those obtained using custom features from a previous assignment.
 
+-Use of Large Language Models
+We utilize DictaBERT to fill in masked tokens within sentences, enhancing the completion of text based on context.
 
-- Use of Large Language Models
-We briefly explore the application of large language models for improving word embeddings and classification tasks, comparing the results with those from traditional methods.
+
+
